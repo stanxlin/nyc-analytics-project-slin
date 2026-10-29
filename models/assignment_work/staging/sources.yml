@@ -9,4 +9,8 @@ sources:
         description: |
           NYC 311 service requests for Dept of Transportation.
           One row per service request.
+      - name: source_dobnow_job_filings_homework
+        description: |
+          NYC Department of Buildings DOB NOW job application filings.
+          One row per job filing.
 
