@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: raw
+    description: Raw data for the group 15 project
+    database: stanleylin-9440-hi
+    schema: group_15_raw_data
+    tables:
+      - name: source_traffic_signal_requests
+        description: |
+          NYC traffic signal requests.
+          One row per request.
