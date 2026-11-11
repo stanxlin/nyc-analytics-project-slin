@@ -1,4 +1,4 @@
-name: 'nyc_analytics'
+name: 'group15'
 version: '1.0.0'
 config-version: 2
 # Some default settings for dbt
@@ -18,23 +18,20 @@ clean-targets:
 
 # Set up models, which are basically SQL files, to create tables
 models:
- nyc_analytics:
+ group15:
    +materialized: table
 
-   assignment_work:
+   project_work:
      staging:
        +materialized: table
-       +schema: nyc_homework_staging
+       +schema: group_15_staging
 
      marts:
        +materialized: table
-       +schema: nyc_homework_warehouse_marts
-      
+       +schema: group_15_marts
+
        conformed:
          +materialized: table
 
-       dob_job_filings:
-         +materialized: table
-
-       dot_311:
+       traffic_signal_requests:
          +materialized: table
